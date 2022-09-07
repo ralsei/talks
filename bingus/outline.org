@@ -1,0 +1,14 @@
+* Hi
+* How to Design Programs
+** What is HtDP?
+** The design recipe (step by step)
+** Templates in relation to enumeration and structure signatures
+** Hey this looks like something a computer can do
+* Existing synthesis approaches
+** Type-and-example directed synthesis
+* Adapting them for HtDP
+** We need a way to pull constants
+** Our approach of doing BFS on refinements
+* Where to go from here
+** Doing Dijkstra instead of BFS
+** What if one of these refinements generated a helper function?
