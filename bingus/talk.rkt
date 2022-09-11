@@ -420,21 +420,43 @@
      @title{Making it faster}
      #:go (coord 0.05 0.2 'lt)
      @item{Using Dijkstra's algorithm instead of breadth-first search}
-     )
+     @item{Removing unit tests from consideration inside conditionals}
+     @item{Using refinement trees from Myth}
+     #:go (coord 0.6 0.35 'lt)
+     (scale-to-fit (bitmap "stutter-tree.png")
+                   (get-client-w)
+                   (- (get-client-h) 280)))
 
     ;; Rosette
     (pslide
      #:go (coord 0.05 0.05 'lt)
      @title{Making it do more}
      #:go (coord 0.05 0.2 'lt)
-     @item{We can't easily apply this algorithm for arithmetic/string functions})
+     @item{We can't easily apply this algorithm for arithmetic/string functions}
+     @item{Calling another synthesizer, like Rosette, would work}
+     @item{This can be implemented as another refinement}
+     #:go (coord 0.5 0.9 'cb)
+     (scale-to-fit (bitmap "days-to-year.png")
+                   (- (get-client-w) 200)
+                   (get-client-h)))
 
     ;; DrRacket Quickscript,
     ;; a decent API for checkers
     (pslide
      #:go (coord 0.05 0.05 'lt)
-     @title{Making it user-friendly})
-
+     @title{Making it user-friendly}
+     #:go (coord 0.05 0.2 'lt)
+     @item{We need some way to call this}
+     @item{We provide a basic API that parses comments from student files}
+     @item{We have a DrRacket Quickscript that runs the synthesizer}
+     #:go (coord 0.05 0.45 'lt)
+     (scale-to-fit (bitmap "bingus1.png")
+                   (- (/ (get-client-w) 2) 100)
+                   (get-client-h))
+     #:go (coord 0.95 0.45 'rt)
+     (scale-to-fit (bitmap "bingus2.png")
+                   (- (/ (get-client-w) 2) 100)
+                   (get-client-h)))
     ))
 
 ;;;; main
